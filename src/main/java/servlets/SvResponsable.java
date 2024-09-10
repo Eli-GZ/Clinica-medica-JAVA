@@ -26,11 +26,12 @@ public class SvResponsable extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
         List<Responsable> listaResponsables = new ArrayList<Responsable>();
 
-        listaResponsables = control.traerResponsables();
-
+        listaResponsables = control.traerResponsables();      
+        
+                
         HttpSession miSesion = request.getSession();
         miSesion.setAttribute("listaResponsables", listaResponsables);
 
@@ -40,7 +41,7 @@ public class SvResponsable extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
+        
         String dni = request.getParameter("dniResp");
         String nombre = request.getParameter("nombre");
         String apellido = request.getParameter("apellido");

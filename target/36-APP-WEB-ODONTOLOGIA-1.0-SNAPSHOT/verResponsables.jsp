@@ -1,3 +1,5 @@
+<%@page import="java.util.Date"%>
+<%@page import="java.text.SimpleDateFormat"%>
 <%@page import="logica.Responsable"%>
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -25,7 +27,7 @@
                             <th class="border border-dark">Apellido</th>
                             <th class="border border-dark">Teléfono</th>
                             <th class="border border-dark">Dirección</th>
-                            <th class="border border-dark">Fecha_Nac</th>  
+                            <th class="border border-dark">Fecha Nac</th>  
                             <th class="border border-dark">Responsable</th>
                             <th class="border border-dark" style="width:210px;">Acción</th> 
                         </tr>
@@ -38,32 +40,36 @@
                             <th class="border border-dark">Apellido</th>
                             <th class="border border-dark">Teléfono</th>
                             <th class="border border-dark">Dirección</th>
-                            <th class="border border-dark">Fecha_Nac</th>  
+                            <th class="border border-dark">Fecha Nac</th>  
                             <th class="border border-dark">Responsable</th>
                             <th class="border border-dark" style="width:210px;">Acción</th> 
                         </tr>
                     </tfoot>
                     <%List<Responsable> listaResponsables = (List) request.getSession().getAttribute("listaResponsables");
+
                     %>
                     <tbody>
-                        <%
-                            for (Responsable resp : listaResponsables) {
+                        <%                            
+                      for (Responsable resp : listaResponsables) {  
+                      SimpleDateFormat formato = new SimpleDateFormat("dd-MM-yyyy");
+                      String fecha = formato.format(resp.getFecha_nac());
+
                         %>
                         <tr>
 
                             <th class="border border-dark" id="id_usu<%= resp.getId()%>"><%= resp.getId()%></th>
-                            <th class="border border-dark"><%= resp.getDni() %></th>
-                            <th class="border border-dark"><%= resp.getNombre() %></th>
-                            <th class="border border-dark"><%= resp.getApellido() %></th>
-                            <th class="border border-dark"><%= resp.getTelefono() %></th>
-                            <th class="border border-dark"><%= resp.getDireccion() %></th>
-                            <th class="border border-dark"><%= resp.getFecha_nac() %></th>  
-                            <th class="border border-dark"><%= resp.getTipo_resp() %></th>
+                            <th class="border border-dark"><%= resp.getDni()%></th>
+                            <th class="border border-dark"><%= resp.getNombre()%></th>
+                            <th class="border border-dark"><%= resp.getApellido()%></th>
+                            <th class="border border-dark"><%= resp.getTelefono()%></th>
+                            <th class="border border-dark"><%= resp.getDireccion()%></th>
+                            <th class="border border-dark"><%= fecha %></th>  
+                            <th class="border border-dark"><%= resp.getTipo_resp()%></th>
 
-                          
+
                             <td class="border border-dark" style="display:flex; width:230px; height: 40px;">
-                                
-                                <form name="eliminar" action="SvElimUsuarios" method="POST">
+
+                                <form name="eliminar" action="SvElimResponsables" method="POST">
                                     <button type="submit" class="btn btn-primary btn-user btn-block" style="background-color: #e83e8c" onMouseOver="this.style.cssText = 'background-color: red'" 
 
                                             onMouseOut="this.style.cssText = 'background-color: #e83e8c'">
@@ -71,14 +77,14 @@
                                     </button>
                                     <input type="hidden" name="id" value="<%= resp.getId()%>">                                
                                 </form>
-                                <form name="editar" action="SvEditUsuarios" method="GET">
+                                <form name="editar" action="SvEditResponsables" method="GET">
                                     <button type="submit" class="btn btn-primary btn-user btn-block" style="margin-left: 5px;">
                                         <i class="fas fa-pencil-alt"></i> Editar
                                     </button>
                                     <input type="hidden" name="id" value="<%= resp.getId()%>">                                
                                 </form>  
-                                
-                               
+
+
                         </tr>
                         <%}%>
                     </tbody>

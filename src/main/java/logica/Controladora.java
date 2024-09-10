@@ -2,6 +2,7 @@ package logica;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -88,7 +89,8 @@ public class Controladora {
     public void crearResponsable(String dni, String nombre, String apellido, String telResp, String direcResp, String fechaResp, String tipoResp) {
 
         try {
-            SimpleDateFormat formato = new SimpleDateFormat("yyyy-mm-dd");
+            
+            SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
             Date fecha = formato.parse(fechaResp);
 
             Responsable resp = new Responsable();
@@ -110,4 +112,35 @@ public class Controladora {
     public List<Responsable> traerResponsables() {
         return controlPersis.traerResponsables();
     }
+
+    public void crearPacientes(String dni, String nombre, String apellido, String telPaci, String direcPaci, String fechaPaci, String obraSo, String tipo_Sangre, String idResp) throws ParseException {
+        /*   SimpleDateFormat formato = new SimpleDateFormat("yyyy-mm-dd");
+        Date fecha = formato.parse(fechaPaci);
+
+        Paciente paci = new Paciente();
+        
+        Responsable respo ()
+
+        paci.setDni(dni);
+        paci.setNombre(nombre);
+        paci.setApellido(apellido);
+        paci.setTelefono(telPaci);
+        paci.setDireccion(direcPaci);
+        paci.setFecha_nac(fecha);
+        paci.setTiene_OS(true);
+        paci.setTipo_sangre(tipo_Sangre);
+        paci.setUnResponsable(idResp);
+
+        controlPersis.crearPacientes(paci);*/
+
+    }
+
+    public void borrarResponsable(int id) {
+        controlPersis.borrarResponsable(id);
+    }
+
+    public Responsable traerResponsable(int id) {
+        return controlPersis.traerResponsable(id);
+    }
+
 }

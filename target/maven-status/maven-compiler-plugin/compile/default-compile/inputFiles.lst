@@ -2,6 +2,7 @@ C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\mai
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\logica\Persona.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\persistencia\PersonaJpaController.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\persistencia\exceptions\NonexistentEntityException.java
+C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\servlets\SvPacientes.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\servlets\SvResponsable.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\persistencia\exceptions\IllegalOrphanException.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\logica\exceptions\PreexistingEntityException.java
@@ -16,6 +17,7 @@ C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\mai
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\logica\Medico.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\persistencia\ResponsableJpaController.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\logica\Secretario.java
+C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\servlets\SvElimResponsables.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\logica\exceptions\IllegalOrphanException.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\logica\Responsable.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\persistencia\UsuarioJpaController.java
@@ -28,3 +30,4 @@ C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\mai
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\servlets\SvMedicos.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\logica\Turno.java
 C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\persistencia\HorarioJpaController.java
+C:\Users\elias\OneDrive\Escritorio\Practicas JAVA\36-APP-WEB-ODONTOLOGIA\src\main\java\servlets\SvEditResponsables.java

@@ -48,14 +48,16 @@
                                  data-parent="#accordionSidebar">
                                 <div class="bg-white py-2 collapse-inner rounded">
                                     <h6 class="collapse-header">Acciones:</h6>
-                                    <a class="collapse-item" href="">Ver Turnos Disponibles</a>
+                                    <a class="collapse-item" href="">Ver Turnos</a>
                                     <a class="collapse-item" href="altaPaciente.jsp">Generar Turno</a> 
                                 </div>
                             </div>
                         </li>  
 
                         <%
-                            if (usuario.equals("admin")) {
+                            if (usuario != null) {
+
+                                if (usuario.equals("admin")) {
                         %>
 
                         <!-- Nav Item - Pages Collapse Menu -->
@@ -68,7 +70,7 @@
                                 <div class="bg-white py-2 collapse-inner rounded">
                                     <h6 class="collapse-header">Acciones:</h6>
                                     <a class="collapse-item" href="">Ver Médicos</a>
-                                    <a class="collapse-item" href="altaMedicos.jsp">Alta Médicos</a>                           
+                                    <a class="collapse-item" href="altaMedicos.jsp">Registrar Médicos</a>                           
                                 </div>
                             </div>
                         </li>
@@ -81,8 +83,8 @@
                             <div id="collapseSecretarios" class="collapse" aria-labelledby="headingSecretarios" data-parent="#accordionSidebar">
                                 <div class="bg-white py-2 collapse-inner rounded">
                                     <h6 class="collapse-header">Acciones:</h6>
-                                    <a class="collapse-item" href="">Ver Médicos</a>
-                                    <a class="collapse-item" href="altaMedicos.jsp">Alta Médicos</a>                           
+                                    <a class="collapse-item" href="">Ver Secretarios</a>
+                                    <a class="collapse-item" href="altaMedicos.jsp">Registrar Secretarios</a>                           
                                 </div>
                             </div>
                         </li>
@@ -99,7 +101,9 @@
                                 </div>
                             </div>
                         </li>
-                        <%       }%>
+                        <%       }
+                            }
+                        %>
                         <!-- Nav Item - Utilities Collapse Menu -->
 
                         <li class="nav-item">

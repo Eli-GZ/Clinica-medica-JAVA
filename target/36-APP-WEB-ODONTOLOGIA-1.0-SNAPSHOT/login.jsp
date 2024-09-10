@@ -7,7 +7,7 @@
         <link href="css/sb-admin-2.css" rel="stylesheet">
 
     </head>
-    <body class="bg-gradient-primary">
+    <body class="bg-info">
 
         <div class="container">
 
@@ -26,20 +26,20 @@
                                         <br>
                                         <br>                                       
                                         <div class="text-center">
-                                            <h1 class="h4 text-gray-900 mt-5 mb-5">Iniciar Sesión</h1>
+                                            <h1 class="h2 text-gray-900 mt-5 mb-5">Iniciar Sesión</h1>
                                         </div>
                                         <form class="user" action="SvLogin" method="POST">
                                             <div class="form-group">
-                                                <input class="form-control form-control-user"
+                                                <input class="form-control mb-4" style="height:50px; font-weight: bolder; font-size: 16px; border: solid"
                                                        id="usuario" name="usuario" aria-describedby="emailHelp"
                                                        placeholder="Usuario">
                                             </div>
                                             <div class="form-group">
-                                                <input type="password" class="form-control form-control-user"
+                                                <input type="password" class="form-control mb-4" style="height:50px; font-weight: bolder; font-size: 16px; border: solid"
                                                        id="contrasenia" name="contrasenia" placeholder="Contraseña">
                                             </div>   
                                             <div class="col-sm-6 mb-3 mx-auto">
-                                                <button class="btn btn-primary btn-user btn-block mx-auto" type="submit">
+                                                <button class="btn btn-info btn-block mx-auto border-dark" style="font-weight: bolder; font-size: 16px;" type="submit">
                                                     Entrar
                                                 </button>
                                             </div>

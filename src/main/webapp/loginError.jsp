@@ -8,7 +8,7 @@
         <link href="css/sb-admin-2.css" rel="stylesheet">
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     </head>
-    <body class="bg-gradient-primary">
+    <body class="bg-info">
 
         <div class="container">
 
@@ -39,11 +39,11 @@
                                         <br> 
                                         <form class="user">  
                                             <div class="col-sm-12 mb-3 mx-auto text-center">
-                                                <p>Nombre de usuario o contraseña incorrecto</p>
+                                                <p style="font-weight: bolder; font-size: 18px">Nombre de usuario o contraseña incorrecto</p>
                                             </div>
                                             <br> 
                                             <div class="col-sm-6 mb-3 mx-auto">
-                                                <a href="login.jsp" class="btn btn-primary btn-user btn-block mx-auto" type="submit">
+                                                <a href="login.jsp" class="btn btn-info btn-block mx-auto border-dark" style="font-weight: bolder; font-size: 16px;" type="submit">
                                                     Ir a Inicio
                                                 </a>
                                             </div>                                                                                       

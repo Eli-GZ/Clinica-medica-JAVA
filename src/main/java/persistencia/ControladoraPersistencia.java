@@ -1,10 +1,12 @@
 package persistencia;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import logica.Medico;
+import logica.Paciente;
 import logica.Responsable;
 import logica.Usuario;
 import persistencia.exceptions.NonexistentEntityException;
@@ -64,4 +66,18 @@ public class ControladoraPersistencia {
     public List<Responsable> traerResponsables() {
         return respJPA.findResponsableEntities();
     }
+
+    public void borrarResponsable(int id) {
+        try {
+            respJPA.destroy(id);
+        } catch (NonexistentEntityException ex) {
+            Logger.getLogger(ControladoraPersistencia.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    public Responsable traerResponsable(int id) {
+
+        return respJPA.findResponsable(id);
+    }
+
 }
