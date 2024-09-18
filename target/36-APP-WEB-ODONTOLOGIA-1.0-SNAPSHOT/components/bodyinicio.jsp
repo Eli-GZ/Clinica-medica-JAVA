@@ -48,8 +48,8 @@
                                  data-parent="#accordionSidebar">
                                 <div class="bg-white py-2 collapse-inner rounded">
                                     <h6 class="collapse-header">Acciones:</h6>
-                                    <a class="collapse-item" href="">Ver Turnos</a>
-                                    <a class="collapse-item" href="altaPaciente.jsp">Generar Turno</a> 
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="">Ver Turnos</a>
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="altaPaciente.jsp">Generar Turno</a> 
                                 </div>
                             </div>
                         </li>  
@@ -69,8 +69,8 @@
                             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                                 <div class="bg-white py-2 collapse-inner rounded">
                                     <h6 class="collapse-header">Acciones:</h6>
-                                    <a class="collapse-item" href="">Ver Médicos</a>
-                                    <a class="collapse-item" href="altaMedicos.jsp">Registrar Médicos</a>                           
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="">Ver Médicos</a>
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="altaMedicos.jsp">Registrar Médicos</a>                           
                                 </div>
                             </div>
                         </li>
@@ -83,8 +83,8 @@
                             <div id="collapseSecretarios" class="collapse" aria-labelledby="headingSecretarios" data-parent="#accordionSidebar">
                                 <div class="bg-white py-2 collapse-inner rounded">
                                     <h6 class="collapse-header">Acciones:</h6>
-                                    <a class="collapse-item" href="">Ver Secretarios</a>
-                                    <a class="collapse-item" href="altaMedicos.jsp">Registrar Secretarios</a>                           
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="">Ver Secretarios</a>
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="altaSecretarios.jsp">Registrar Secretarios</a>                           
                                 </div>
                             </div>
                         </li>
@@ -96,8 +96,8 @@
                             <div id="collapseUsu" class="collapse" aria-labelledby="headingUsu" data-parent="#accordionSidebar">
                                 <div class="bg-white py-2 collapse-inner rounded">
                                     <h6 class="collapse-header">Acciones:</h6>
-                                    <a class="collapse-item" href="SvUsuarios">Ver Usuarios</a>
-                                    <a class="collapse-item" href="altaUsuarios.jsp">Alta Usuarios</a>                           
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="SvUsuarios">Ver Usuarios</a>
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="altaUsuarios.jsp">Alta Usuarios</a>                           
                                 </div>
                             </div>
                         </li>
@@ -115,8 +115,8 @@
                                  data-parent="#accordionSidebar">
                                 <div class="bg-white py-2 collapse-inner rounded">
                                     <h6 class="collapse-header">Acciones:</h6>
-                                    <a class="collapse-item" href="">Ver Pacientes</a>
-                                    <a class="collapse-item" href="altaPaciente.jsp">Alta Pacientes</a> 
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="">Ver Pacientes</a>
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="altaPaciente.jsp">Alta Pacientes</a> 
                                 </div>
                             </div>
                         </li>                      
@@ -131,8 +131,8 @@
                                  data-parent="#accordionSidebar">
                                 <div class="bg-white py-2 collapse-inner rounded">
                                     <h6 class="collapse-header">Acciones:</h6>
-                                    <a class="collapse-item" href="SvResponsable">Ver Responsables</a>
-                                    <a class="collapse-item" href="altaResponsable.jsp">Alta Responsables</a> 
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="SvResponsable">Ver Responsables</a>
+                                    <a class="collapse-item" style="font-size: 16px; color: black; font-weight:800" href="altaResponsable.jsp">Alta Responsables</a> 
                                 </div>
                             </div>
                         </li>  

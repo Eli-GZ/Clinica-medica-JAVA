@@ -22,30 +22,30 @@
 <form class="user" action="SvEditResponsables" method="POST">
     <div class="form-group col">
         <div class="col-sm-4 mb-3 mx-auto">
-            <input type="text" class="form-control form-control-user" style="font-weight: bolder; font-size: 14px; border: solid" id="dniResp" name="dniResp" value="<%= resp.getDni()%>" required="">
+            <input type="text" class="form-control mb-4" style="height:50px; font-weight: bolder; font-size: 16px; border: solid" id="dniResp" name="dniResp" value="<%= resp.getDni()%>" placeholder="DNI"required="">
         </div>
         <div class="col-sm-4 mb-3 mx-auto">
-            <input type="text" class="form-control form-control-user" style="font-weight: bolder; font-size: 14px; border: solid" id="nombre" name="nombre" value="<%= resp.getNombre()%>" required="">
+            <input type="text" class="form-control mb-4" style="height:50px; font-weight: bolder; font-size: 16px; border: solid" id="nombre" name="nombre" value="<%= resp.getNombre()%>" placeholder="Nombre"required="">
         </div>
         <div class="col-sm-4 mb-3 mx-auto">
-            <input type="text" class="form-control form-control-user" style="font-weight: bolder; font-size: 14px; border: solid" id="apellido" name="apellido" value="<%= resp.getApellido()%>" required="">
+            <input type="text" class="form-control mb-4" style="height:50px; font-weight: bolder; font-size: 16px; border: solid" id="apellido" name="apellido" value="<%= resp.getApellido()%>" placeholder="Apellido"required="">
         </div>
         <div class="col-sm-4 mb-3 mx-auto">
-            <input type="text" class="form-control form-control-user" style="font-weight: bolder; font-size: 14px; border: solid" id="telefono" name="tel" value="<%= resp.getTelefono()%>" required=""> 
+            <input type="text" class="form-control mb-4" style="height:50px; font-weight: bolder; font-size: 16px; border: solid" id="telefono" name="tel" value="<%= resp.getTelefono()%>" placeholder="Teléfono"required=""> 
         </div>
         <div class="col-sm-4 mb-3 mx-auto">
-            <input type="text" class="form-control form-control-user" style="font-weight: bolder; font-size: 14px; border: solid" id="direccion" name="direc" value="<%= resp.getDireccion()%>" required="">
+            <input type="text" class="form-control mb-4" style="height:50px; font-weight: bolder; font-size: 16px; border: solid" id="direccion" name="direc" value="<%= resp.getDireccion()%>" placeholder="Dirección"required="">
         </div>
         <div class="col-sm-4 mb-3 mx-auto">
-            <input type="text" class="form-control form-control-user" style="font-weight: bolder; font-size: 14px; border: solid" id="fechanac" name="fecha_nac" value="<%= fecha%>" required="">
+            <input type="text" class="form-control mb-4" style="height:50px; font-weight: bolder; font-size: 16px; border: solid" id="fechanac" name="fecha_nac" value="<%= fecha%>" placeholder="Fecha Nac"required="">
         </div>
 
         <div class="col-sm-4 mb-3 mx-auto">
-            <input type="text" class="form-control form-control-user" style="font-weight: bolder; font-size: 14px; border: solid" id="parentesco" name="tipo_resp" value="<%= resp.getTipo_resp()%>" required="">
+            <input type="text" class="form-control mb-4" style="height:50px; font-weight: bolder; font-size: 16px; border: solid" id="parentesco" name="tipo_resp" value="<%= resp.getTipo_resp()%>" placeholder="Parentesco"required="">
         </div>
         <hr>
         <div class="col-sm-2 mb-3 mx-auto">
-            <button class="btn btn-info btn-user btn-block mx-auto border-dark"style="font-weight: bolder; font-size: 16px" type="submit">
+            <button class="btn btn-info btn-block mx-auto border-dark"style="font-weight: bolder; font-size: 16px" type="submit">
                 Guardar Modificación
             </button>
         </div>

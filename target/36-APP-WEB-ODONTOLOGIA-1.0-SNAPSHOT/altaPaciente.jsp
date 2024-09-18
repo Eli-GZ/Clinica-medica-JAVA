@@ -1,3 +1,4 @@
+<%@page import="logica.Responsable"%>
 <%@page import="logica.Paciente"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@include file="components/header.jsp"%>
@@ -8,7 +9,9 @@
     <div class="col-sm-6 mb-3 mx-auto">
         <h1>Alta Pacientes</h1>
         <p>Completa los datos:</p></div>  </div>   
+        <%            Responsable resp = (Responsable) request.getSession().getAttribute("respEditar");
 
+        %>
 <div>    
     <form class="user" action="SvPacientes" method="POST">
         <div class="form-group col">
@@ -37,20 +40,19 @@
                 <input type="text" class="form-control mb-4" style="height:50px; font-weight: bolder; font-size: 16px; border: solid" id="tipo_sangre" placeholder="Tipo de Sangre">
 
                 <p><b>*</b>Solo menores de edad</p>
-            </div>          
-            <form name="editar" action="SvEditPacientes" method="GET">
-                <div class="col-sm-4 mb-2 mx-auto">        
-                    <label><b>Dni Responsable:</b></label>
-                    <select type="text" class="form-control" style=" height:50px;font-weight: bolder; font-size: 16px; border: solid">
-                        <option>-</option>
-                        <option></option>
-                        <option></option>
-                    </select> 
-                    <a href="altaResponsable.jsp" class="btn btn-info btn-block border-dark" style="font-weight: bolder; font-size: 16px; margin-top: 10px">
-                        Agregar Responsable
-                    </a>
-                </div>
-            </form> 
+            </div>  
+            <div class="col-sm-4 mb-2 mx-auto">        
+                <label><b>Dni Responsable:</b></label>
+                <select type="text" class="form-control" style=" height:50px;font-weight: bolder; font-size: 16px; border: solid">
+                    <option>-</option>
+                    <option></option>   
+                    <option></option>     
+                </select> 
+                <a href="altaResponsable.jsp" class="btn btn-info btn-block border-dark" style="font-weight: bolder; font-size: 16px; margin-top: 10px">
+                    Agregar Responsable
+                </a>
+            </div>            
+
             <hr>
             <div class="col-sm-2 mb-3 mx-auto">
                 <button class="btn btn-info btn-block mx-auto border-dark"style="font-weight: bolder; font-size: 16px" type="submit">

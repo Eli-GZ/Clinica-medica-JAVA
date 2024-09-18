@@ -1,7 +1,6 @@
 package servlets;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -31,11 +30,8 @@ public class SvEditResponsables extends HttpServlet {
             throws ServletException, IOException {
 
         int id = Integer.parseInt(request.getParameter("id"));
-        Responsable resp = control.traerResponsable(id);       
-    
-        
-        System.out.println(resp.getFecha_nac());
-        
+        Responsable resp = control.traerResponsable(id);
+
         HttpSession miSesion = request.getSession();
         miSesion.setAttribute("respEditar", resp);
 
@@ -46,15 +42,41 @@ public class SvEditResponsables extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+
+        try {
+            String dni = request.getParameter("dniResp");
+            String nombre = request.getParameter("nombre");
+            String apellido = request.getParameter("apellido");
+            String telResp = request.getParameter("tel");
+            String direcResp = request.getParameter("direc");
+            String fechaResp = request.getParameter("fecha_nac");
+            String tipoResp = request.getParameter("tipo_resp");
+            
+            Responsable resp = (Responsable) request.getSession().getAttribute("respEditar");
+            
+            SimpleDateFormat formato = new SimpleDateFormat("dd-MM-yyyy");
+            Date fecha = formato.parse(fechaResp);            
+            
+            
+            resp.setDni(dni);
+            resp.setNombre(nombre);
+            resp.setApellido(apellido);
+            resp.setTelefono(telResp);
+            resp.setDireccion(direcResp);
+            resp.setFecha_nac(fecha);
+            resp.setTipo_resp(tipoResp);
+            
+            control.editarResponsable(resp);
+            
+            response.sendRedirect("SvResponsable");
+        } catch (ParseException ex) {
+            Logger.getLogger(SvEditResponsables.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
-  
     @Override
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
-
-  
 
 }

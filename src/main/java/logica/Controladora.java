@@ -89,7 +89,7 @@ public class Controladora {
     public void crearResponsable(String dni, String nombre, String apellido, String telResp, String direcResp, String fechaResp, String tipoResp) {
 
         try {
-            
+
             SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
             Date fecha = formato.parse(fechaResp);
 
@@ -142,5 +142,12 @@ public class Controladora {
     public Responsable traerResponsable(int id) {
         return controlPersis.traerResponsable(id);
     }
+
+    public void editarResponsable(Responsable resp) {
+
+        controlPersis.editarResponsable(resp);
+    }
+
+   
 
 }
