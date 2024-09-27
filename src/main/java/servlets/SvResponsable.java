@@ -52,7 +52,7 @@ public class SvResponsable extends HttpServlet {
 
         control.crearResponsable(dni, nombre, apellido, telResp, direcResp, fechaResp, tipoResp);
 
-        response.sendRedirect("altaResponsable.jsp");
+        response.sendRedirect("SvResponsable");
 
     }
 
