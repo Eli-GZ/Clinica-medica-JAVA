@@ -67,7 +67,7 @@
                             <th class="border border-dark"><%= resp.getTipo_resp()%></th>
 
 
-                            <td class="border border-dark" style="display:flex; width:230px; height: 40px;">
+                            <td class="border border-dark" style="display:flex; width:230px; height: 60px;">
 
                                 <form name="eliminar" action="SvElimResponsables" method="POST">
                                     <button type="submit" class="btn btn-primary btn-user btn-block" style="background-color: #e83e8c" onMouseOver="this.style.cssText = 'background-color: red'" 
